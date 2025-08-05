@@ -1,0 +1,66 @@
+body {
+  background: white;
+}
+
+#gameArea {
+  background: rgb(10,18, 21);
+  width: 80vmin;
+  height: 80vmin;
+  position: relative;
+  margin: 10vmin auto;
+}
+
+#ball {
+  background: white;
+  width: 4%;
+  height: 4%;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  top: 94%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#paddle {
+  background: white;
+  height: 3%;
+  width: 20%;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 96%;
+  transform: translateX(-50%)
+}
+
+#blocks {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  gap: 1vmin;
+  padding: 10vmin 8vmin;
+}
+
+.block {
+  height: 3vmin;
+  border-radius: .5vmin;
+}
+
+.block:nth-child(-n + 6) {
+  background: red;
+}
+.block:nth-child(n + 7):nth-child(-n+12) {
+  background: blueviolet;
+}
+.block:nth-child(n + 13):nth-child(-n+18) {
+  background: hotpink;
+}
+
+button {
+    height: 3vmin;
+    width: 8%;
+    position: absolute;
+    top: 92vmin;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-size: auto;
+}
