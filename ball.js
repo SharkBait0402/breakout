@@ -314,6 +314,8 @@ function renderPaddle() {
   paddle.elem.style.left = paddle.cx + "%"
 }
 
+const btn = document.querySelector("button")
+
 function winGame() {
   const isTrue = (value) => value.smashed == true;
 
@@ -409,6 +411,10 @@ function gameLoop() {
   }
   
 }
+
+btn.addEventListener("click", (event) => {
+  window.location.reload(true);
+});
 
 // This should probably be the final line in your
 // program and the one that sets off the gameLoop.
