@@ -321,10 +321,14 @@ function winGame() {
 
   if( blocks.count.every(isTrue) ) {
     window.removeEventListener("pointermove", movePaddle)
-  paddle.elem.style.opacity = ".2";
-  game.elem.style.background = "green";
-  game.state = true;
-  return true;
+    paddle.elem.style.opacity = ".2";
+    game.elem.style.background = "green";
+    game.state = true;
+    ball.cx = 70;
+    ball.cy = 94;
+    ball.xSpeed = .5
+    ball.ySpeed = .5
+    return true;
   }
   return false;
 }
