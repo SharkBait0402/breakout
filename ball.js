@@ -353,7 +353,6 @@ let axis = "";
 
 function hitBlock(block) {
 
-  // log(ball.top)
   // log(ball.bottom)
   // log(block.top)
   // log(block.bottom)
