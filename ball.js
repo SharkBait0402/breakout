@@ -286,14 +286,14 @@ function xDirection() {
     let offsetPercentage = offsetPixels / pad.width * 100;
     let percentageToEdge = offsetPercentage - 50;
 
-    log(percentageToEdge, "percentage to edge");
+    // log(percentageToEdge, "percentage to edge");
 
     if( percentageToEdge >= 25 && ball.direction=="left")   {
       ball.velocityX = 1 * ball.xSpeed;
-      log("left")
+      // log("left")
     } else if( percentageToEdge <= -25 && ball.direction=="right" ) {
       ball.velocityX = -1 * ball.xSpeed;
-      log("right")
+      // log("right")
     } else if(ball.direction=="left") {
       ball.velocityX = -1 * ball.xSpeed;
     } else if(ball.direction=="right") {
@@ -350,7 +350,6 @@ function handleBlocks() {
   
 }
 
-log(blocks.count[0])
 
 let axis = "";
 
