@@ -243,8 +243,6 @@ function horizontalSpeed() {
 
     let offsetPixels = ( b.left + b.width / 2 ) - pad.left;
     
-    //log(offsetPixels);
-    //log( offsetPixels / pad.width * 100 );
     
     let offsetPercentage = offsetPixels / pad.width * 100;
     let percentageToEdge = Math.abs(offsetPercentage - 50);
